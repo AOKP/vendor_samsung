@@ -56,7 +56,6 @@ PRODUCT_PACKAGES += \
     BIP \
     IMSFramework \
     RTN \
-    SDM \
     SyncMLSvc \
     VZWAPNLib \
     VZWAPNService
