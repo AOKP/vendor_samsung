@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(LOCAL_PATH)
+LOCAL_PATH := vendor/samsung/maguro
 
-# All the blobs necessary for maguro
+# Samsung blob(s) necessary for Maguro hardware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/fRom:system/bin/fRom \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
