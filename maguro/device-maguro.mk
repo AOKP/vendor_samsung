@@ -26,4 +26,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/proprietary/libinvensense_mpl.so:system/vendor/lib/libinvensense_mpl.so \
     $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
-
+    $(LOCAL_PATH)/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \
+    $(LOCAL_PATH)/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    $(LOCAL_PATH)/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    $(LOCAL_PATH)/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    $(LOCAL_PATH)/proprietary/gralloc.omap4.so:system/vendor/lib/hw/gralloc.omap4.so \
+    $(LOCAL_PATH)/proprietary/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
+    $(LOCAL_PATH)/proprietary/libIMGegl.so:system/vendor/lib/libIMGegl.so \
+    $(LOCAL_PATH)/proprietary/libpvr2d.so:system/vendor/lib/libpvr2d.so \
+    $(LOCAL_PATH)/proprietary/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
+    $(LOCAL_PATH)/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
+    $(LOCAL_PATH)/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
+    $(LOCAL_PATH)/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
+    $(LOCAL_PATH)/proprietary/libusc.so:system/vendor/lib/libusc.so \
