@@ -42,5 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/logcat-off:system/bin/logcat-off \
     vendor/samsung/fascinatemtd/proprietary/logcat-on:system/bin/logcat-on \
     vendor/samsung/fascinatemtd/proprietary/sysinit:system/bin/sysinit \
-    vendor/samsung/fascinatemtd/proprietary/90call_vol_fascinate:system/etc/init.d/90call_vol_fascinate
+    vendor/samsung/fascinatemtd/proprietary/hosts:system/etc/hosts \
+    vendor/samsung/fascinatemtd/proprietary/block_ads:system/etc/init.d/block_ads \
+    vendor/samsung/fascinatemtd/proprietary/lib.sh:system/bin/lib.sh \
+    vendor/samsung/fascinatemtd/proprietary/callboost:system/bin/callboost
 

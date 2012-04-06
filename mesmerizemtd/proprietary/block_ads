@@ -1,0 +1,21 @@
+#!/system/bin/sh
+
+if [ -z "`grep soma.smaato /system/etc/hosts`" ]; then
+
+busybox mount -o rw,remount /system
+
+badhosts="c09.smaato.net \
+c35.smaato.net \
+c16.smaato.net \
+c20.smaato.net \
+soma.smaato.net \
+adelh.smaato.net"
+
+for host in $badhosts
+do
+  echo "127.0.0.1 $host" >> /system/etc/hosts
+done
+
+busybox mount -o ro,remount /system
+
+fi

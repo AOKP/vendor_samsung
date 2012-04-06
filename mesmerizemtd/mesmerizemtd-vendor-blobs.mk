@@ -33,9 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/orientationd:system/vendor/bin/orientationd \
     vendor/samsung/mesmerizemtd/proprietary/ip-up:system/etc/ppp/ip-up \
     vendor/samsung/mesmerizemtd/proprietary/ip-down:system/etc/ppp/ip-down \
-    vendor/samsung/mesmerizemtd/proprietary/chap-secrets:system/etc/ppp/chap-secrets \
-    vendor/samsung/mesmerizemtd/proprietary/options:system/etc/ppp/options \
-    vendor/samsung/mesmerizemtd/proprietary/pap-secrets:system/etc/ppp/pap-secrets \
     vendor/samsung/mesmerizemtd/proprietary/cleaningmodules:script/cleaningmodules \
     vendor/samsung/mesmerizemtd/proprietary/nstools.sh:script/nstools.sh \
     vendor/samsung/mesmerizemtd/proprietary/logcat_module:system/etc/init.d/logcat_module \
@@ -45,4 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/logcat-off:system/bin/logcat-off \
     vendor/samsung/mesmerizemtd/proprietary/logcat-on:system/bin/logcat-on \
     vendor/samsung/mesmerizemtd/proprietary/sysinit:system/bin/sysinit \
-    vendor/samsung/mesmerizemtd/proprietary/90call_vol_fascinate:system/etc/init.d/90call_vol_fascinate
+    vendor/samsung/mesmerizemtd/proprietary/hosts:system/etc/hosts \
+    vendor/samsung/mesmerizemtd/proprietary/block_ads:system/etc/init.d/block_ads \
+    vendor/samsung/mesmerizemtd/proprietary/lib.sh:system/bin/lib.sh \
+    vendor/samsung/mesmerizemtd/proprietary/callboost:system/bin/callboost
+
