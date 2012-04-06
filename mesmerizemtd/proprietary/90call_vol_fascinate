@@ -1,0 +1,55 @@
+#!/system/bin/sh
+
+# configure your desired audio settings below
+
+# in-call audio gain. These values range from 0 to 3. They control the digital gain
+# on the incoming signal. Their meanings are:
+
+# 0 = 0db gain. Quiet. Too quiet, if you ask me
+# 1 = +6db gain. Quiet.
+# 2 = +12db gain. Loud. Sufficient for most folks, probably. Also the default
+# 3 = +18db gain. Holy shit, that's loud! Risk of distortion.
+
+# See how you can control the gain for each audio output?  Neat!
+INCALL_BOOST_EARPIECE=2
+INCALL_BOOST_BLUETOOTH=2
+INCALL_BOOST_SPEAKER=2
+INCALL_BOOST_HEADPHONE=2
+
+# Now, configure your desired mic gain for each mode.
+# Mic gain goes from 0 to 31.
+# 0  = -16.5db gain
+# 11 = 0db gain
+# 31 = 30db gain
+# So it looks like each +1 for these values is the same as +1.5db.
+# you can fine-tune each for the best performance.
+MIC_GAIN_EARPIECE=19
+MIC_GAIN_SPEAKER=31
+MIC_GAIN_HEADPHONE=29
+MIC_GAIN_HEADPHONE_NO_MIC=18
+
+# next, we'll take advantage of cm7's userinit.d feature.
+# if your rom doesn't have that, add it to /etc/init.d instead
+# just be sure you do the chmod and chown commands below in any case
+
+# mkdir -p /data/local/userinit.d
+# place this file in /data/local/userinit.d
+# chmod -R 750 /data/local/userinit.d
+# chown -R root:shell /data/local/userinit.d
+
+# you should not need to change anything below this line:
+
+# set up in-call boost
+echo "$INCALL_BOOST_EARPIECE" > /sys/devices/virtual/misc/voodoo_sound/incall_boost_rcv
+echo "$INCALL_BOOST_BLUETOOTH" > /sys/devices/virtual/misc/voodoo_sound/incall_boost_bt
+echo "$INCALL_BOOST_SPEAKER" > /sys/devices/virtual/misc/voodoo_sound/incall_boost_spk
+echo "$INCALL_BOOST_HEADPHONE" > /sys/devices/virtual/misc/voodoo_sound/incall_boost_hp
+
+# set up in-call mic gain
+echo "$MIC_GAIN_EARPIECE" > /sys/devices/virtual/misc/voodoo_sound/incall_mic_gain_rcv
+echo "$MIC_GAIN_SPEAKER" > /sys/devices/virtual/misc/voodoo_sound/incall_mic_gain_spk
+echo "$MIC_GAIN_HEADPHONE" > /sys/devices/virtual/misc/voodoo_sound/incall_mic_gain_hp
+echo "$MIC_GAIN_HEADPHONE_NO_MIC" > /sys/devices/virtual/misc/voodoo_sound/incall_mic_gain_hp_no_mic
+
+
+

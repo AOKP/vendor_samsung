@@ -31,6 +31,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so \
     vendor/samsung/fascinatemtd/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
     vendor/samsung/fascinatemtd/proprietary/orientationd:system/vendor/bin/orientationd \
-    vendor/samsung/fascinatemtd/proprietary/sensors.aries.so:system/lib/hw/sensors.aries.so \
     vendor/samsung/fascinatemtd/proprietary/ip-up:system/etc/ppp/ip-up \
-    vendor/samsung/fascinatemtd/proprietary/ip-down:system/etc/ppp/ip-down
+    vendor/samsung/fascinatemtd/proprietary/ip-down:system/etc/ppp/ip-down \
+    vendor/samsung/fascinatemtd/proprietary/cleaningmodules:script/cleaningmodules \
+    vendor/samsung/fascinatemtd/proprietary/nstools.sh:script/nstools.sh \
+    vendor/samsung/fascinatemtd/proprietary/logcat_module:system/etc/init.d/logcat_module \
+    vendor/samsung/fascinatemtd/proprietary/S99screenstate_scaling:system/etc/init.d/S99screenstate_scaling \
+    vendor/samsung/fascinatemtd/proprietary/screenstate_scaling:system/etc/glitch-config/screenstate_scaling \
+    vendor/samsung/fascinatemtd/proprietary/sleep_governor:system/etc/glitch-config/sleep_governor \
+    vendor/samsung/fascinatemtd/proprietary/logcat-off:system/bin/logcat-off \
+    vendor/samsung/fascinatemtd/proprietary/logcat-on:system/bin/logcat-on \
+    vendor/samsung/fascinatemtd/proprietary/sysinit:system/bin/sysinit \
+    vendor/samsung/fascinatemtd/proprietary/90call_vol_fascinate:system/etc/init.d/90call_vol_fascinate
+
