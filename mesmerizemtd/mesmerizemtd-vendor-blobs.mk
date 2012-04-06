@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/orientationd:system/vendor/bin/orientationd \
     vendor/samsung/mesmerizemtd/proprietary/ip-up:system/etc/ppp/ip-up \
     vendor/samsung/mesmerizemtd/proprietary/ip-down:system/etc/ppp/ip-down \
+    vendor/samsung/mesmerizemtd/proprietary/chap-secrets:system/etc/ppp/chap-secrets \    vendor/samsung/mesmerizemtd/proprietary/options:system/etc/ppp/options \    vendor/samsung/mesmerizemtd/proprietary/pap-secrets:system/etc/ppp/pap-secrets \
     vendor/samsung/mesmerizemtd/proprietary/cleaningmodules:script/cleaningmodules \
     vendor/samsung/mesmerizemtd/proprietary/nstools.sh:script/nstools.sh \
     vendor/samsung/mesmerizemtd/proprietary/logcat_module:system/etc/init.d/logcat_module \
