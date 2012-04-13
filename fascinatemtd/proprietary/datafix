@@ -1,0 +1,92 @@
+#!/system/xbin/sh
+#datafix
+echo "Glitch datadata manager"
+echo "Kanged from Wendigogo and enhanced by Stevespear426 and Efpophis"
+echo ""
+# Includes
+. /system/bin/lib.sh
+
+# Abort conditions
+root_uid_check
+
+# Defines
+
+DATA_SCRIPT=/system/etc/init.d/30datafix
+REMOUNTED=0
+
+write_boot()
+{
+[ -f $1 ] && echo -n "Overwriting existing boot script at $1... " || echo -n "Installing boot script to $1... "
+
+cat > $1 <<STOP
+#!/system/bin/sh
+# Move these app subdirectoriesdirs_to_move='databases shared_prefs opera app_databases'
+datadata='/data/data'
+yaffs='/datadata'
+
+if test -L "\$datadata"; then
+        rm -r "\$datadata.new"
+        cp -a "\$yaffs" "\$datadata.new" &&
+        rm "\$datadata" &&
+        mv "\$datadata.new" "\$datadata" &&
+        rm -r "\$yaffs/"* || {
+                echo 1>&2 "Error: failed moving \$yaffs to \$datadata"
+                exit 1
+        }
+fi
+
+cd "\$datadata" &&
+for app in *; do
+        echo " \$skip_apps " | grep " \$app " && continue
+        for d in \$dirs_to_move; do
+                if [ ! -L "\$app/\$d" -a -d "\$app/\$d" ]; then
+                        echo "Processing \$app/\$d..." &&
+                        if [ -d "\$yaffs/\$app/\$d" ]; then
+                                rm -r "\$yaffs/\$app/\$d"
+                        fi &&
+                        tar -cf - "\$app/\$d" | tar -C "\$yaffs" -xf - &&
+                        rm -r "\$app/\$d" &&
+                        ln -s "\$yaffs/\$app/\$d" "\$app/\$d" &&
+                        chmod 775 "\$yaffs/\$app" ||
+                                echo 1>&2 "Error: failed moving \$app/\$d"
+                fi
+        done
+done
+
+cd "\$yaffs" &&
+for d in *; do
+        if [ -d "\$d" -a ! -d "\$datadata/\$d" ]; then
+                echo "Removing stale app resources \$d..."
+                rm -r "\$d"
+        fi
+done
+STOP
+
+chown 0.0 $1 && chmod 755 $1 && echo "done!" || err_exit "Failed to install boot script!"
+
+}
+
+# Script body
+if system_is_ro; then
+	system_rw
+	REMOUNTED=1
+fi
+
+if [ "$1" = "enable" ]; then
+	write_boot $DATA_SCRIPT
+	echo "30datafix installed"
+	echo "Go set TiBu Prefs->Troubleshooting->Symlink on"
+	echo "Or you may get corrupt backups"
+elif [ "$1" = "disable" ]; then
+	probe_del_boot $DATA_SCRIPT
+	echo "30datascript deleted"
+elif [ $1 ]; then
+	echo "Unrecognized option: $1"; echo ""; show_options "datafix"
+else
+	show_options "datafix"
+fi
+
+[ "$REMOUNTED" = "1" ] && system_ro
+
+echo "
+Finished."

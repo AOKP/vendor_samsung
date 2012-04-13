@@ -48,6 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/hosts:system/etc/hosts \
     vendor/samsung/mesmerizemtd/proprietary/block_ads:system/etc/init.d/block_ads \
     vendor/samsung/mesmerizemtd/proprietary/lib.sh:system/bin/lib.sh \
-    vendor/samsung/mesmerizemtd/proprietary/30datafix:system/etc/init.d/30datafix \
+    vendor/samsung/mesmerizemtd/proprietary/datafix:system/bin/datafix \
     vendor/samsung/mesmerizemtd/proprietary/callboost:system/bin/callboost
 
