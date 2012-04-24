@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mesmerizemtd/proprietary/libril.so:system/lib/libril.so \
     vendor/samsung/mesmerizemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/mesmerizemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
+    vendor/samsung/mesmerizemtd/proprietary/lights.aries.so:system/lib/hw/lights.aries.so \
     vendor/samsung/mesmerizemtd/proprietary/rild:system/bin/rild \
     vendor/samsung/mesmerizemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/mesmerizemtd/proprietary/gpsd:system/vendor/bin/gpsd \
