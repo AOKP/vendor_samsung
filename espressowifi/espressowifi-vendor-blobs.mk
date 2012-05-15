@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/espressowifi/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so \
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/espressowifi/proprietary/bin/bcm_dut:system/bin/bcm_dut \
     vendor/samsung/espressowifi/proprietary/bin/fRom:system/bin/fRom \
     vendor/samsung/espressowifi/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/espressowifi/proprietary/bin/gps.cer:system/bin/gps.cer \
@@ -43,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/espressowifi/proprietary/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
     vendor/samsung/espressowifi/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     vendor/samsung/espressowifi/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/espressowifi/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/samsung/espressowifi/proprietary/lib/libtiutils.so:system/lib/libtiutils.so \
     vendor/samsung/espressowifi/proprietary/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
     vendor/samsung/espressowifi/proprietary/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
