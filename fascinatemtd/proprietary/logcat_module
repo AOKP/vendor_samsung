@@ -1,0 +1,3 @@
+#!/system/bin/sh
+
+insmod /data/local/logger.ko
