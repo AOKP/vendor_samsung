@@ -46,6 +46,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/hosts:system/etc/hosts \
     vendor/samsung/fascinatemtd/proprietary/block_ads:system/etc/init.d/block_ads \
     vendor/samsung/fascinatemtd/proprietary/lib.sh:system/bin/lib.sh \
-    vendor/samsung/fascinatemtd/proprietary/datafix:system/bin/datafix \
-    vendor/samsung/fascinatemtd/proprietary/callboost:system/bin/callboost
+    vendor/samsung/fascinatemtd/proprietary/datafix:system/bin/datafix
 
