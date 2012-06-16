@@ -69,7 +69,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/hercules/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
         vendor/samsung/hercules/proprietary/lib/libidl.so:system/lib/libidl.so \
         vendor/samsung/hercules/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+        vendor/samsung/hercules/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
         vendor/samsung/hercules/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
+        vendor/samsung/hercules/proprietary/lib/libgpsone_bit_api.so:system/lib/libgpsone_bit_api.so \
         vendor/samsung/hercules/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
         vendor/samsung/hercules/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
         vendor/samsung/hercules/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
