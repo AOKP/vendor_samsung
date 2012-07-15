@@ -1,3 +1,0 @@
-#!/system/bin/sh
-rm /system/lib/modules/*
-rm /data/local/logger.ko
