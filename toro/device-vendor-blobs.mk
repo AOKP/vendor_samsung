@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \
     vendor/samsung/toro/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \
     vendor/samsung/toro/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so \
-    vendor/samsung/toro/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \
+    vendor/samsung/toro/proprietary/pvrsrvctl:system/vendor/bin/pvrsrvctl \
     vendor/samsung/toro/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
     vendor/samsung/toro/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
     vendor/samsung/toro/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
@@ -54,6 +54,7 @@ PRODUCT_COPY_FILES += \
 # All the apks necessary for toro
 PRODUCT_PACKAGES += \
     BIP \
+    CellBroadcastReceiverVZW \
     IMSFramework \
     RTN \
     SDM \
