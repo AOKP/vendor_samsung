@@ -38,12 +38,15 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2tmo/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2tmo/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
         vendor/samsung/d2tmo/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
+        vendor/samsung/d2tmo/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
         vendor/samsung/d2tmo/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
         vendor/samsung/d2tmo/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
         vendor/samsung/d2tmo/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2tmo/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
         vendor/samsung/d2tmo/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/d2tmo/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
+        vendor/samsung/d2tmo/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+        vendor/samsung/d2tmo/proprietary/lib/libaudioutils.so:system/lib/libaudioutils.so \
         vendor/samsung/d2tmo/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
         vendor/samsung/d2tmo/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
         vendor/samsung/d2tmo/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
