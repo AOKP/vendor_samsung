@@ -92,7 +92,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libquipc_os_api.so:system/lib/libquipc_os_api.so \
         vendor/samsung/d2vzw/proprietary/lib/libquipc_ulp_adapter.so:system/lib/libquipc_ulp_adapter.so \
         vendor/samsung/d2vzw/proprietary/lib/libwifiscanner.so:system/lib/libwifiscanner.so \
-        vendor/samsung/d2vzw/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2vzw/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
         vendor/samsung/d2vzw/proprietary/bin/geomagneticd:system/bin/geomagneticd \
         vendor/samsung/d2vzw/proprietary/bin/orientationd:system/bin/orientationd \
