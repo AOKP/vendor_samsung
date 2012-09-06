@@ -91,6 +91,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/hercules/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
 	vendor/samsung/hercules/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/hercules/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+	vendor/samsung/hercules/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
 	vendor/samsung/hercules/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
 	vendor/samsung/hercules/proprietary/etc/wifi/wl:system/etc/wifi/wl \
 	vendor/samsung/hercules/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
