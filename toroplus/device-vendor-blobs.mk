@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toroplus/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/samsung/toroplus/proprietary/libusc.so:system/vendor/lib/libusc.so \
     vendor/samsung/toroplus/proprietary/libinvensense_mpl.so:system/vendor/lib/libinvensense_mpl.so \
+    vendor/samsung/toroplus/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
+    vendor/samsung/toroplus/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
+    vendor/samsung/toroplus/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    vendor/samsung/toroplus/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so \
 
 # All the apks necessary for toroplus
 PRODUCT_PACKAGES += \
