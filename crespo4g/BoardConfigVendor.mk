@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/samsung/crespo/device-vendor-blobs.mk)
+-include vendor/samsung/crespo4g/BoardConfigCrespo4g.mk
