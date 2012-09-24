@@ -16,8 +16,8 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-        vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
+	vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+	vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
-        vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2vzw/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
@@ -54,6 +53,14 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2vzw/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2vzw/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+        vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2vzw/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/d2vzw/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -151,20 +158,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2vzw/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2vzw/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
-
-# Proprietary VZW blobs for LTE
-
-PRODUCT_PACKAGES += \
-    VZWAPNLib \
-    vzwapnpermission \
-    VZWAPNService
