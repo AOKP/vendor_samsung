@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
     vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
     vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
+    vendor/samsung/toro/proprietary/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/toro/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/toro/proprietary/libsyncml_core.so:system/lib/libsyncml_core.so \
     vendor/samsung/toro/proprietary/libsyncml_port.so:system/lib/libsyncml_port.so \
