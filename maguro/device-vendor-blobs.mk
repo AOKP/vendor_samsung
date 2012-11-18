@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES := \
 # All the blobs necessary for maguro
 PRODUCT_COPY_FILES += \
     vendor/samsung/maguro/proprietary/fRom:system/bin/fRom \
+    vendor/samsung/maguro/proprietary/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/maguro/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/maguro/proprietary/pvrsrvctl:system/vendor/bin/pvrsrvctl \
     vendor/samsung/maguro/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
