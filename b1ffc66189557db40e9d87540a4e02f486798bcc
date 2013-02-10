@@ -1,0 +1,9 @@
+Change-Id: Ib1ffc66189557db40e9d87540a4e02f486798bcc
+Code-Review+2: Gergely Szell (sethyx) <sethyx@gmail.com>
+Verified+1: Gergely Szell (sethyx) <sethyx@gmail.com>
+Code-Review+1: Brandon McAnsh <bmc08gt.teamb00sted@gmail.com>
+Submitted-by: Gergely Szell (sethyx) <sethyx@gmail.com>
+Submitted-at: Sun, 10 Feb 2013 09:59:31 +0000
+Reviewed-on: http://gerrit.sudoservers.com/5411
+Project: AOKP/vendor_samsung
+Branch: refs/heads/jb-mr1
