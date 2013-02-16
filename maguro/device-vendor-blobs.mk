@@ -42,5 +42,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/maguro/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
     vendor/samsung/maguro/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/maguro/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    vendor/samsung/maguro/proprietary/libusc.so:system/vendor/lib/libusc.so
+    vendor/samsung/maguro/proprietary/libusc.so:system/vendor/lib/libusc.so \
+    vendor/samsung/maguro/proprietary/smc_normal_world_android_cfg.ini:system/vendor/etc/smc_normal_world_android_cfg.ini \
+    vendor/samsung/maguro/proprietary/smc_pa_wvdrm.ift:system/vendor/firmware/smc_pa_wvdrm.ift \
+    vendor/samsung/maguro/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/maguro/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/samsung/maguro/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/maguro/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
 
