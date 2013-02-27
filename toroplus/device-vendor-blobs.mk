@@ -16,6 +16,7 @@
 
 # All the blobs necessary for toroplus
 PRODUCT_PACKAGES += \
+    bcm4330 \
     BIP \
     HiddenMenu \
     SDM \
