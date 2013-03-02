@@ -15,12 +15,13 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/vibrantmtd/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/vibrantmtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+    vendor/samsung/vibrantmtd/proprietary/modem.bin:modem.bin
 
 
 # All the blobs necessary for vibrantmtd devices
 PRODUCT_COPY_FILES += \
-    vendor/samsung/vibrantmtd/proprietary/secgps.conf:system/etc/vendor/samsung-agps/secgps.conf \
+    vendor/samsung/vibrantmtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/vibrantmtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/vibrantmtd/proprietary/libclientgps.so:system/lib/libclientgps.so \
     vendor/samsung/vibrantmtd/proprietary/libsamsung_hwlegacy.so:system/vendor/lib/libsamsung_hwlegacy.so \
