@@ -21,12 +21,13 @@ PRODUCT_PACKAGES += \
     IMSFramework \
     RTN \
     lib_gsd4t \
+    libdrmdecrypt \
     libims \
     libims_jni \
     libsec-ril_lte \
+    libsecril-client \
     com.vzw.hardware.ehrpd.xml \
     com.vzw.hardware.lte.xml \
     com.vzw.vzwapnlib.xml \
     VZWAPNLib \
     VZWAPNService
-

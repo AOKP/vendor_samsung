@@ -15,4 +15,6 @@
 # Samsung blob(s) necessary for maguro hardware
 PRODUCT_PACKAGES += \
     bcm4330 \
-    libsec-ril
+    libdrmdecrypt \
+    libsec-ril \
+    libsecril-client

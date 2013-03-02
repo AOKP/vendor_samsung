@@ -23,7 +23,9 @@ PRODUCT_PACKAGES += \
     SecPhone \
     SyncMLSvc \
     lib_gsd4t \
+    libdrmdecrypt \
     libsec-ril_lte \
     libsyncml_core \
-    libsyncml_port
+    libsyncml_port \
+    libsecril-client
 

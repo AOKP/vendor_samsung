@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
     fRom \
     gps.omap4 \
     gralloc.omap4 \
-    libdrmdecrypt \
     libdrmwvmplugin \
     libEGL_POWERVR_SGX540_120 \
     libGLESv1_CM_POWERVR_SGX540_120 \
@@ -30,7 +29,6 @@ PRODUCT_PACKAGES += \
     libpvr2d \
     libpvrANDROID_WSEGL \
     libPVRScopeServices \
-    libsecril-client \
     libsrv_init \
     libsrv_um \
     libusc \
