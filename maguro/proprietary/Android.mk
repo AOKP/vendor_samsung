@@ -17,6 +17,16 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),maguro)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := bcm4330
+LOCAL_MODULE_OWNER := broadcom
+LOCAL_SRC_FILES := bcm4330.hcd
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .hcd
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/firmware
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libsec-ril
 LOCAL_MODULE_OWNER := samsung
 LOCAL_SRC_FILES := libsec-ril.so

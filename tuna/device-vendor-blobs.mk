@@ -14,7 +14,6 @@
 
 # Samsung blob(s) necessary for maguro hardware
 PRODUCT_PACKAGES += \
-    bcm4330 \
     ducati-m3 \
     fRom \
     gps.omap4 \

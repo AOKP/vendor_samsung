@@ -17,16 +17,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter maguro toro toroplus,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bcm4330
-LOCAL_MODULE_OWNER := broadcom
-LOCAL_SRC_FILES := bcm4330.hcd
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .hcd
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/firmware
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := pvrsrvctl
 LOCAL_MODULE_OWNER := imgtec
 LOCAL_SRC_FILES := pvrsrvctl
