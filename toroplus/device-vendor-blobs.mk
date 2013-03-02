@@ -22,8 +22,11 @@ PRODUCT_PACKAGES += \
     SDM \
     SecPhone \
     SyncMLSvc \
+    gps.omap4 \
     lib_gsd4t \
+    libdrmdecrypt \
     libsec-ril_lte \
     libsyncml_core \
-    libsyncml_port
-
+    libsyncml_port \
+    libsecril-client \
+    sirfgps
