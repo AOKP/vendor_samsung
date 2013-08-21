@@ -14,7 +14,7 @@ xtalfreq=37400
 nocrc=1
 ag0=0
 aa2g=1
-ccode=ALL
+ccodeUS
 
 #Power Cal
 pa0itssit=0x20

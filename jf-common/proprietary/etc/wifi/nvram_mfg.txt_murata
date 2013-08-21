@@ -9,7 +9,7 @@ boardflags2=0x0
 boardflags3=0x800c48c
 #boardnum=57410 
 macaddr=00:90:4c:c5:12:38()
-ccode=ALL
+ccode=US
 regrev=0
 antswitch=0
 
