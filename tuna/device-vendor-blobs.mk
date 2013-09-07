@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     gralloc.omap4 \
     libdrmwvmplugin \
     libEGL_POWERVR_SGX540_120 \
+    libfrsdk \
     libGLESv1_CM_POWERVR_SGX540_120 \
     libGLESv2_POWERVR_SGX540_120 \
     libglslcompiler \
@@ -32,6 +33,7 @@ PRODUCT_PACKAGES += \
     libsrv_um \
     libusc \
     libwvdrm_L1 \
+    libwvdrmengine \
     libwvm \
     libWVStreamControlAPI_L1 \
     pvrsrvctl
