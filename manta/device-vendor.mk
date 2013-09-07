@@ -26,9 +26,13 @@ PRODUCT_PACKAGES := \
     libclcore_neonArm \
     libdrmdecrypt \
     libdrmwvmplugin \
+    libfrsdk \
     libGLES_mali \
+    libmalicore \
     libRSDriverArm \
+    libstagefright_hdcp \
     libwvdrm_L1 \
+    libwvdrmengine \
     libwvm \
     libWVStreamControlAPI_L1 \
     maxtouch \
@@ -38,4 +42,5 @@ PRODUCT_PACKAGES := \
     setfile_6a3 \
     00060308060501020000000000000000 \
     020a0000000000000000000000000000 \
-    07060000000000000000000000000000
+    07060000000000000000000000000000 \
+    ffffffff000000000000000000000005
