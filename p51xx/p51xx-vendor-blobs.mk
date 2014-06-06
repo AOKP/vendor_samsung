@@ -15,11 +15,14 @@
 LOCAL_PATH := vendor/samsung/p51xx
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/common/system/bin/bintvoutservice:system/bin/bintvoutservice \
+    $(LOCAL_PATH)/common/system/bin/dock_kbd_attach:system/bin/dock_kbd_attach \
     $(LOCAL_PATH)/common/system/bin/geomagneticd:system/bin/geomagneticd \
     $(LOCAL_PATH)/common/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/common/system/bin/hostapd:system/bin/hostapd \
     $(LOCAL_PATH)/common/system/bin/orientationd:system/bin/orientationd \
-    $(LOCAL_PATH)/common/system/bin/dock_kbd_attach:system/bin/dock_kbd_attach
+    $(LOCAL_PATH)/common/system/bin/smc.ini:system/bin/smc.ini \
+    $(LOCAL_PATH)/common/system/bin/smc_pa.ift:system/bin/smc_pa.ift
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
@@ -30,15 +33,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/lib/hw/camera.omap4.so:system/lib/hw/camera.omap4.so \
+    $(LOCAL_PATH)/common/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
     $(LOCAL_PATH)/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
     $(LOCAL_PATH)/common/system/lib/libtiutils.so:system/lib/libtiutils.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/lib/libdomx.so:system/lib/libdomx.so \
+    $(LOCAL_PATH)/common/system/lib/libhdcp.so:system/lib/libhdcp.so \
     $(LOCAL_PATH)/common/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    $(LOCAL_PATH)/common/system/lib/libion.so:system/lib/libion.so \
+    $(LOCAL_PATH)/common/system/lib/libion.omap4.so:system/lib/libion.omap4.so \
+    $(LOCAL_PATH)/common/system/lib/libion_ti.so:system/lib/libion_ti.so \
     $(LOCAL_PATH)/common/system/lib/libmm_osal.so:system/lib/libmm_osal.so \
     $(LOCAL_PATH)/common/system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so:system/lib/libOMX.TI.DUCATI1.MISC.SAMPLE.so \
     $(LOCAL_PATH)/common/system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so:system/lib/libOMX.TI.DUCATI1.VIDEO.CAMERA.so \
@@ -48,29 +53,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so:system/lib/libOMX.TI.DUCATI1.VIDEO.MPEG4E.so \
     $(LOCAL_PATH)/common/system/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     $(LOCAL_PATH)/common/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    $(LOCAL_PATH)/common/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/bin/pvrsrvctl:system/vendor/bin/pvrsrvctl
+    $(LOCAL_PATH)/common/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    $(LOCAL_PATH)/common/system/lib/libtvoutinterface.so:system/lib/libtvoutinterface.so \
+    $(LOCAL_PATH)/common/system/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
+    $(LOCAL_PATH)/common/system/lib/libtvoutservice.so:system/lib/libtvoutservice.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd \
     $(LOCAL_PATH)/common/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/lib/hw/gralloc.omap4.so:system/vendor/lib/hw/gralloc.omap4.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/lib/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libIMGegl.so:system/vendor/lib/libIMGegl.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libpvr2d.so:system/vendor/lib/libpvr2d.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libusc.so:system/vendor/lib/libusc.so
+    $(LOCAL_PATH)/common/system/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
